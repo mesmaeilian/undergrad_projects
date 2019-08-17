@@ -96,8 +96,7 @@ def Omega_m(z):
     a = results.get_Omega('baryon', z)
     b = results.get_Omega('nu', z)
     c = results.get_Omega('cdm', z)
-    d = results.get_Omega('neutrino', z)
-    return a+b+c+d
+    return a+b+c
 
 ####################
 
