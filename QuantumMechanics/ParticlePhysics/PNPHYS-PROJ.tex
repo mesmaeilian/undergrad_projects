@@ -1,0 +1,270 @@
+\documentclass{article}
+
+\usepackage[textwidth=5.5in,textheight=9.5in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Particle Physics Project - Pionic Atoms}
+\author{Muhammad Sadegh Esmaeilian}
+\date{January 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+A pionic atom is system contain a quark and an anti-quark i.e. is a meson. We have three pions in definition \(\pi^{0}\), \(\pi^{+}\) and \(\pi^{-}\). Pions are the lightests mesons. They are unstable with the life time and rest mass of 
+
+\begin{center}
+\begin{tabular}{ c | c c c }
+ & $\pi^{0}$ & $\pi^{+}$ & $\pi^{-}$ \\
+ \hline 
+Life Time & $8.4 \times 10^{-17} s$ & $2.6033 \times 10^{-8} s$ & $2.6033 \times 10^{-8} s$\\  
+Rest Mass & $134.9766 \mathrm{MeV} / c^{2}$ & $139.57018 \mathrm{MeV} / c^{2}$ & $139.57018 \mathrm{MeV} / c^{2}$
+\end{tabular}
+\end{center}
+Pions, which are mesons with zero spin, are composed of first-generation quarks. In the quark model, an up quark and an anti-down quark make up a \(\pi^{+}\), whereas a down quark and an anti-up quark make up the \(\pi^{-}\), and these are the antiparticles of one another. The neutral pion \(\pi^{0}\) is a combination of an up quark with an anti-up quark or a down quark with an anti-down quark. 
+The two combinations have identical quantum numbers, and hence they are only found in superpositions. The lowest-energy superposition of these is the \(\pi^{0}\), which is its own antiparticle. Together, the pions form a triplet of isospin. Each pion has isospin \((I = 1)\) and third-component isospin equal to its charge \((I_{z} = +1, 0, −1)\). 
+Also the well-known decays of pions are listed below
+
+\begin{center}
+\begin{tabular}{ c | c | c }
+$\pi^{0}$ & $\pi^{+}$ & $\pi^{-}$ \\
+ \hline 
+$\pi^{0} \rightarrow 2 \mathrm{\gamma}$ & $\pi^{+} \rightarrow \mu^{+}+v_{\mu}$ & $\pi^{-} \rightarrow \mu^{-}+\bar{v}_{\mu}$\\  
+$\pi^{0} \rightarrow \gamma+e^{-}+e^{+}$ & $\pi^{+} \rightarrow e^{+}+{v}_{e}$ & $\pi^{-} \rightarrow e^{-}+\bar{v}_{e}$\\
+$\pi^{0} \rightarrow e^{-}+e^{+}+e^{-}+e^{+}$ & $\pi^{+} \rightarrow \pi^{0}+e^{+}+v_{e}$ & $\pi^{-} \rightarrow \pi^{0}+e^{-}+\bar{v}_{e}$
+\end{tabular}
+\end{center}
+In the next part we are going to obtain the wavefunctions and energy levels in these systems.
+
+\section{Energy Levels and Wave functions}
+The General form of Lagrangian Density is 
+
+\begin{equation}
+    \mathcal{L} = \frac{\hbar^{2}}{2 m_{0}}\left[\left(\partial_{\mu}-\frac{i q}{\hbar c} A_{\mu}\right) \psi^{*}\left(\partial^{\mu}+\frac{i q}{\hbar c}A^{\mu}\right) \psi - \frac{m^{2} c^{2}}{\hbar^{2}}\psi^{*} \psi - \frac{U_{s}^{2}}{c^{2} \hbar^{2}} \psi^{*}\psi\right]-\frac{1}{4} F^{\mu\nu} F_{\mu\nu}
+\end{equation}
+
+Now for a simple pionic atom we choose 
+
+\begin{equation}
+    A^{\mu}=\left(\frac{Z|e|}{r}, 0\right)
+\end{equation}
+
+So by this definition we solve the Euler-Lagrange equation which for \(\psi\) is
+
+\begin{equation}
+    \partial_{\mu} \frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \psi\right)}-\frac{\partial \mathcal{L}}{\partial \psi} = 0
+\end{equation}
+
+and for \(\psi^{*}\) is
+
+\begin{equation}
+    \partial_{\mu} \frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \psi^{*}\right)}-\frac{\partial \mathcal{L}}{\partial \psi^{*}} = 0
+\end{equation}
+
+By substituting relation (1) in Euler-Lagrange equation for \(\psi^{*}\)
+
+\begin{equation}
+    \partial_{\mu}\left[\partial^{\mu}+\frac{i q}{\hbar c} A^{\mu}\right] \psi +  \frac{i q}{\hbar c} A_{\mu}\left[\partial^{\mu}+\frac{i q}{\hbar c} A^{\mu}\right] \psi+\frac{m^{2} c^{2}}{\hbar^{2}} \psi+\frac{U_{s}^{2}}{\hbar^{2} c^{2}} \psi= 0
+\end{equation}
+
+which we can write it as
+
+\begin{equation}
+    \left[D_{\mu} D^{\mu}+\frac{m^{2} c^{2}}{\hbar^{2}}+\frac{U_{(S)}^{2}}{\hbar^{2} c^{2}}\right] \psi=0
+\end{equation}
+and similarly for \(\psi\) we should have 
+
+\begin{equation}
+    \left[\left[\partial_{\mu}-\frac{i q}{\hbar c} A_{\mu}\right]\left[\partial^{\mu}-\frac{i q}{\hbar c} A^{\mu}\right]+\frac{m^{2} c^{2}}{\hbar^{2}}+\frac{U_{s}^{2}}{\hbar^{2} c^{2}}\right] \psi^{*}= 0
+\end{equation}
+which is
+
+\begin{equation}
+    \left[D^{\prime}_{\mu} D^{\prime}^{\mu}+\frac{m^{2} c^{2}}{\hbar^{2}}+\frac{U_{(S)}^{2}}{\hbar^{2} c^{2}}\right] \psi^{*}=0
+\end{equation}
+These are knowns as Klein-Gorden Equations. Because in this case our scaler and vector potential don't depend to time we can seperate our solution. So we can write 
+
+\begin{equation}
+    \left[(\frac{1}{c} \partial_{t} + \frac{iq}{\hbar c}A^{0})(\frac{1}{c} \partial_{t} + \frac{iq}{\hbar c}A^{0}) - \nabla^{2} + \frac{m^{2}c^{2}}{\hbar^{2}}\right] \psi(\vec{x}, t) = 0
+\end{equation}
+which means we can write
+
+\begin{equation}
+    \psi(\vec{x}, t) = \psi(\vec{x}) e^{-\frac{i\epsilon t}{\hbar}}
+\end{equation}
+Now we have 
+
+\begin{equation}
+    \left[(\frac{1}{c} \partial_{t} + \frac{iq}{\hbar c}A^{0})(\frac{1}{c} \partial_{t} + \frac{iq}{\hbar c}A^{0}) - \nabla^{2} + \frac{m^{2}c^{2}}{\hbar^{2}}\right] \psi(\vec{x}) e^{-\frac{i\epsilon t}{\hbar}} = 0
+\end{equation}
+where in spherical coordinates we have
+
+\begin{equation}
+   \nabla^{2}=\frac{1}{r} \frac{\partial^{2}}{\partial r^{2}} r + \frac{1}{r^{2} \sin \theta} \partial_{\theta}\left(\sin \theta \partial_{\theta}\right) + \frac{1}{r^{2} \sin ^{2} \theta} \partial_{\varphi}^{2}
+\end{equation}
+For the complete form of equation we can write 
+\begin{equation}
+\begin{aligned}
+E^{\prime} \psi=&-\frac{\hbar^{2}}{\mu_{0}+\mu} \nabla^{2} \psi+\frac{2 \mu}{\mu_{0}+\mu} U \psi-\frac{U^{2}}{\left(\mu_{0}+\mu\right) c^{2}} \psi \\
+&+\frac{1}{\left(\mu_{0}+\mu\right)\left[\left(\mu_{0}+\mu\right) c^{2}-U\right]} \frac{d U}{d r}\left(\frac{2}{r} \mathbf{S} \cdot \mathbf{L} \psi-\hbar^{2} \frac{\partial \psi}{\partial r}\right)
+\end{aligned}
+\end{equation}
+which for simplifying this equation we can write this as 
+\begin{equation}
+\begin{aligned}
+E^{\prime} \psi=&-\frac{\hbar^{2}}{m_{0}+m}\left[\frac{\partial}{\partial r}\left(r^{2} \frac{\partial}{\partial r}\right)+\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial}{\partial \theta}\right)+\frac{1}{\sin ^{2} \theta} \frac{\partial^{2}}{\partial \varphi^{2}}\right] \psi \\
+&-\frac{2 m}{m_{0}+m} \frac{Z e_{s}^{2}}{r} \psi-\frac{1}{\left(m_{0}+m\right) c^{2}} \frac{Z^{2} e_{s}^{4}}{r^{2}} \psi
+\end{aligned}
+\end{equation}
+Now from this equation, becuase our potential has spherical symmetry we can seperate the radial part and spherical part of it i.e.
+
+\begin{equation}
+	\psi(r, \theta, \phi) = R(r) Y(\theta, \phi)
+\end{equation}
+So
+\begin{equation}
+\begin{aligned}
+\frac{\left(m_{0}+m\right) E^{\prime} r^{2}}{\hbar^{2}} &+\frac{1}{R} \frac{\partial}{\partial r}\left(r^{2} \frac{\partial R}{\partial r}\right)+2 m \frac{Z e_{s}^{2}}{\hbar^{2}} r+\frac{Z^{2} e_{s}^{4}}{\hbar^{2} c^{2}} \\
+&=-\frac{1}{Y}\left[\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial Y}{\partial \theta}\right)+\frac{1}{\sin ^{2} \theta} \frac{\partial^{2} Y}{\partial \varphi^{2}}\right]=\lambda
+\end{aligned}
+\end{equation}
+and 
+\begin{equation}
+\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r^{2} \frac{\partial R}{\partial r}\right)+\frac{\left(m_{0}+m\right) E^{\prime}}{\hbar^{2}} R+\left[\frac{2 m}{\hbar^{2}} \frac{Z e_{s}^{2}}{r}+\left(\frac{Z^{2} e_{s}^{4}}{\hbar^{2} c^{2}}-\lambda\right) \frac{1}{r^{2}}\right] R=0
+\end{equation}
+Also for spatial part we have 
+\begin{equation}
+\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial Y}{\partial \theta}\right)+\frac{1}{\sin ^{2} \theta} \frac{\partial^{2} Y}{\partial \varphi^{2}}+\lambda Y=0
+\end{equation}
+where \(\lambda\) denote \(l(l+1)\) for \(l=0, 1, 2, ...\) and certainly we find that the solutions spherical part are spherical harmonics. Now for radial part, let's talk about a condition where we are in the bound states \(E^{\prime}<0\), Let
+\begin{equation}
+\alpha^{\prime}=\left[\frac{4\left(m_{0}+m\right)\left|E^{\prime}\right|}{\hbar^{2}}\right]^{1 / 2}, \quad \beta=\frac{2 m Z e_{s}^{2}}{\alpha^{\prime} \hbar^{2}}
+\end{equation}
+Also by letting \(R(r)=\frac{u(r)}{r}\),
+\begin{equation}
+\frac{1}{r^{2}} \frac{d}{d r}\left(r^{2} \frac{d R}{d r}\right)=\frac{1}{r} \frac{d^{2}}{d r^{2}}(r R)
+\end{equation}
+and by using \(\rho = \alpha^{\prime} r\), then the equation will be
+\begin{equation}
+\frac{d^{2} u}{d \rho^{2}}+\left[\frac{\beta}{\rho}-\frac{1}{4}-\frac{l(l+1)-Z^{2} \alpha^{2}}{\rho^{2}}\right] u=0
+\end{equation}
+Now by studing the asymptotic behaviour of this equation, when \(\rho \rightarrow \infty\) we can write 
+\begin{equation}
+\frac{d^{2} u}{d \rho^{2}}-\frac{1}{4} u=0, \quad u(\rho)=e^{\pm \rho / 2}
+\end{equation}
+So the general solution will be \(u(\rho) = e^{-\frac{\rho}{2}} f(\rho)\), (we choose negative sign for convergency)
+\begin{equation}
+\frac{d^{2} f}{d \rho^{2}}-\frac{d f}{d \rho}+\left[\frac{\beta}{\rho}-\frac{l(l+1)-Z^{2} \alpha^{2}}{\rho^{2}}\right] f=0
+\end{equation}
+The solution for this equation can be shown as a series form i.e.
+\begin{equation}
+f(\rho)=\sum_{\nu=0}^{\infty} b_{\nu} \rho^{s+\nu}, \quad b_{0} \neq 0
+\end{equation}
+Now by substitiuting (24) in (23) as the coefficient of \(\rho^{s+\nu-1}\) is equal to zero which we get,
+\begin{equation}
+b_{\nu+1}=\frac{s+\nu-\beta}{(s+\nu)(s+\nu+1)-l(l+1)+Z^{2} \alpha^{2}} b_{\nu}
+\end{equation}
+\begin{array}{l}{\text { If the series are infinite series, then when } \nu \rightarrow \infty \text { we have } b_{\nu+1} / b_{\nu} \rightarrow 1 / \nu . \text { Therefore, }} \\ {\text { when } \rho \rightarrow \infty, \text { the behaviour of the series is the same as that of } e^{\rho}, \text { then we have }}\end{array}
+\begin{equation}
+R=\frac{\alpha^{\prime}}{\rho} u(\rho)=\frac{\alpha^{\prime}}{\rho} e^{-\rho / 2} f(\rho)
+\end{equation}
+Where \(f()\rho\) goes to infinity when \(\rho \rightarrow \infty\), which is in conflict with the finite conditions of wave functions. There for, the series should only have finite terms. Let \(b_{n_{r}} \rho^{s+n_{r}}\) be the highest-order term, then \(b_{n_{r}+1}= 0\), by substituting \(\nu=n_{r}\) into (25) we have \(\beta=n_{r} + s\). On the other hand, the series starts from \(\nu=0\), and doesn't have the term \(\nu=-1\), therefore \(b_{-1}=0\). Substituting this in (25) and  considering \(b_{0}\) is not zero we have \(s(s-1) = l(l+1) - Z^{2}\alpha^{2}\). Denoting \(n = n_{r} + l + 1\) then the following set of equations can be solved for \(s\) and \(\beta\),
+\begin{equation}
+\left\{\begin{array}{l}{s(s-1)=l(l+1)-Z^{2} \alpha^{2}} \\ {\beta=n_{r}+s} \\ {n=n_{r}+l+1}\end{array}\right
+\end{equation}
+where we have \(s=1 / 2 \pm \sqrt{(l+1 / 2)^{2}-Z^{2} \alpha^{2}}\) which we take the positive sign. So 
+\begin{equation}
+\beta=n_{r}+s=n-l-1 / 2+\sqrt{(l+1 / 2)^{2}-Z^{2} \alpha^{2}}=n-\sigma_{l}
+\end{equation}
+where
+\begin{equation}
+\sigma_{l}=l+1 / 2-\sqrt{(l+1 / 2)^{2}-Z^{2} \alpha^{2}}
+\end{equation} 
+and according to (19) we have 
+\begin{equation}
+\beta=\frac{2 m Z e_{s}^{2}}{\alpha^{\prime} \hbar^{2}}=\frac{Z e_{s}^{2}}{\hbar}\left[\frac{m^{2}}{\left(m_{0}+m\right)\left|E^{\prime}\right|}\right]^{1 / 2} \text { or }\left(n-\sigma_{l}\right)^{2}=\frac{Z^{2} e_{s}^{4}}{\hbar^{2}} \frac{m^{2}}{\left(m_{0}+m\right)\left|E^{\prime}\right|}
+\end{equation}
+Considering \(m=m_{0}-\frac{|E^{\prime}|}{c^{2}}\), then \(|E^{\prime}|\) satisfies the following second-order algebric equation
+\begin{equation}
+\frac{Z^{2} \alpha^{2}+\left(n-\sigma_{l}\right)^{2}}{c^{2}}\left|E^{\prime}\right|^{2}-2 m_{0}\left[Z^{2} \alpha^{2}+\left(n-\sigma_{l}\right)^{2}\right]\left|E^{\prime}\right|+Z^{2} \alpha^{2} m_{0}^{2} c^{2}=0
+\end{equation}
+As we see, the expression of \(|E^{\prime}|\) obtained by solving the equation is related to both \(n=1,2,... \) and \(l=0,1,...,n-1 \) thus \(E=m_{0}c^{2}-|E^{\prime}|\) can be denoted by \(E_{n}\) then we have 
+\begin{equation}
+\begin{aligned} E_{n} &=m_{0} c^{2}-\left|E^{\prime}\right| \\ &=m_{0} c^{2}-m_{0} c^{2}\left(1 \pm \frac{n-\sigma_{l}}{\sqrt{Z^{2} \alpha^{2}+\left(n-\sigma_{l}\right)^{2}}}\right)=\mp \frac{\left(n-\sigma_{l}\right) m_{0} c^{2}}{\sqrt{Z^{2} \alpha^{2}+\left(n-\sigma_{l}\right)^{2}}}
+\end{aligned}
+\end{equation}
+by taking positive sign 
+\begin{equation}
+E_{n}=\frac{m_{0} c^{2}}{\sqrt{1+Z^{2} \alpha^{2} /\left(n-\sigma_{l}\right)^{2}}}
+\end{equation}
+If we ignore the effects of nuclear motion, then its relativistic energy level is 
+\begin{equation}
+\begin{aligned} E_{n} &=m_{0} c^{2}\left[1+\frac{Z^{2} \alpha^{2}}{(n-(l+1 / 2)+\sqrt{(l+1 / 2)^{2}-Z^{2} \alpha^{2}})^{2}}\right]^{-1 / 2} \\ &=m_{0} c^{2}\left[1-\frac{Z^{2} \alpha^{2}}{2 n^{2}}-\frac{Z^{4} \alpha^{4}}{2 n^{4}}\left(\frac{n}{l+1 / 2}-\frac{3}{4}\right)+\cdots\right] 
+\end{aligned}
+\end{equation}
+As \(E_{n}=mc^{2}\), the system mass corresponding to the positive solution is 
+\begin{equation}
+m=\frac{m_{0}}{\sqrt{1+Z^{2} \alpha^{2} /\left(n-\sigma_{l}\right)^{2}}}
+\end{equation}
+Solving the radial equation, we found that if we substitute the solutions \(s=l+1-\sigma_{l}\) and \(\beta=n-\sigma_{l}\) into equation (25) we have,
+\begin{equation}
+b_{\nu+1}=\frac{\nu+l+1-n}{\left(\nu+1-\sigma_{l}\right)\left(2 l+2+\nu-\sigma_{l}\right)+Z^{2} \alpha^{2}} b_{\nu}
+\end{equation}
+and 
+\begin{equation}
+\begin{aligned} b_{\nu} &=\frac{(l-n+\nu)(l-n+\nu-1) \cdots(l-n+2)(l-n+1)}{\prod_{k=1}^{\nu}\left[\left(k-\sigma_{l}\right)\left(2 l+1+k-\sigma_{l}\right)+(Z \alpha)^{2}\right]} b_{0} \\ &=\frac{(-1)^{\nu}(n-l-1)(n-l-2) \cdots(n-l-\nu)}{\prod_{k=1}^{\nu}\left[\left(k-\sigma_{l}\right)\left(2 l+1+k-\sigma_{l}\right)\right] \prod_{k=1}^{\nu}\left(1+\frac{Z^{2} \alpha^{2}}{\left(k-\sigma_{l}\right)\left(2 l+k-\sigma_{l}\right)}\right)} b_{0} \\ &=\frac{(-1)^{\nu}(n-l-1) !}{(n-l-1-\nu) ! \prod_{k=1}^{\nu}\left[\left(k-\sigma_{l}\right)\left(2 l+1+k-\sigma_{l}\right)\right] \eta(l, \nu)} b_{0} \end{aligned}
+\end{equation}
+where \(b_0\) is a constant 
+\begin{equation}
+b_{0}=-\frac{[(n+l) !]^{2}}{(n-l-1) ! \Gamma\left(1-\sigma_{l}\right) \Gamma\left(2 l+2-\sigma_{l}\right)} \frac{N_{n l}}{\alpha^{\prime}}
+\end{equation}
+Thus we have
+\begin{equation}
+b_{\nu}=\frac{(-1)^{\nu+1}[(n+l) !]^{2}}{(n-l-1-\nu) ! \Gamma\left(\nu+1-\sigma_{l}\right) \Gamma\left(2 l+2+\nu-\sigma_{l}\right) \eta(l, \nu)} \frac{N_{n l}}{\alpha^{\prime}}
+\end{equation}
+By substituting into (24) we get
+\begin{equation}
+R_{n l}(r)=N_{n l} e^{-\rho / 2} \sum_{\nu=0}^{n-l-1} \frac{(-1)^{\nu+1}[(n+l) !]^{2} \rho^{l-\sigma_{l}+\nu}}{(n-l-1-\nu) ! \Gamma\left(\nu+1-\sigma_{l}\right) \Gamma\left(2 l+2+\nu-\sigma_{l}\right) \eta(l, \nu)}
+\end{equation}
+So the total solution is 
+\begin{equation}
+\Psi(\mathbf{r}, t)=\psi_{n l m}(r, \theta, \varphi) e^{-i E_{n} t / \hbar}=R_{n l}(r) Y_{l m}(\theta, \varphi) e^{-i E_{n} t / \hbar}
+\end{equation}
+By normalizing we might get 
+\begin{equation}
+\begin{aligned} R_{n l}(r) &=N_{n l} e^{-\frac{Z}{\left(n-\sigma_{l}\right) a_{0}} r} r\left(\frac{2 Z}{\left(n-\sigma_{l}\right) a_{0}} r\right)^{l-\sigma_{l}} L_{n+l}^{2 l+1-\sigma_{l}}\left(\frac{2 Z}{\left(n-\sigma_{l}\right) a_{0}} r\right) \\ \sigma_{l} &=l+\frac{1}{2}-\left[\left(l+\frac{1}{2}\right)^{2}-Z^{2} \alpha^{2}\right]^{1 / 2}=\sum_{k=1}^{\infty} \frac{2^{k-1}(2 k-3) ! !}{k !(2 l+1)^{2 k-1}}(Z \alpha)^{2 k} \end{aligned}
+\end{equation}
+and now we got the orthonormality relation as
+\begin{equation} 
+\int_{0}^{\infty} R_{n l}^{2}(r) r^{2} d r=1 \quad \text { and } \quad \int_{0}^{\pi} \int_{0}^{2 \pi} Y_{l m}^{*}(\theta, \varphi) Y_{l m}(\theta, \varphi) \sin \theta d \theta d \varphi=1
+\end{equation}
+
+\section{Results}
+I solved these equations completely and the code is available at my github page. For instance the below table shows some of the energy levels
+
+\begin{center}
+\begin{tabular}{ c | c c c }
+ & $\pi^{0}$ & $\pi^{+}$ & $\pi^{-}$ \\
+ \hline 
+(1, 0) & $1.799952045397237 \times 10^{-13}$ & $2.399936060529649\times 10^{-13}$ & $2.399936060529649\times 10^{-13}$\\  
+(2, 0) & $1.7999880116287428 \times 10^{-13} $ & $2.39998401550499\times 10^{-13}$ & $2.39998401550499\times 10^{-13}$\\
+(2, 1) & $1.799988012054546 \times 10^{-13} $ & $2.399984016072728\times 10^{-13}$ & $2.399984016072728\times 10^{-13}$\\
+(3, 0) & $1.79999467190005 \times 10^{-13} $ & $2.3999928958667334\times 10^{-13}$ & $2.3999928958667334\times 10^{-13}$\\
+(3, 1) & $1.799994672026214 \times 10^{-13} $ & $2.399992896034952\times 10^{-13}$ & $2.399992896034952\times 10^{-13}$\\
+(3, 2) & $1.7999946720514467 \times 10^{-13} $ & $2.3999928960685954\times 10^{-13}$ &$2.3999928960685954\times 10^{-13}$\\
+(4, 0) & $1.7999970029645693 \times 10^{-13} $ & $2.3999960039527587\times 10^{-13}$ & $2.3999960039527587\times 10^{-13}$\\
+(4, 1) & $1.7999970030177948 \times 10^{-13} $ & $2.399996004023726\times 10^{-13}$ & $2.399996004023726\times 10^{-13}$\\
+(4, 2) & $1.7999970030284397 \times 10^{-13} $ & $2.3999960040379193\times 10^{-13}$ & $2.3999960040379193\times 10^{-13}$\\
+(4, 3) & $1.799997003033002 \times 10^{-13} $ & $2.3999960040440025\times 10^{-13}$ & $2.3999960040440025\times 10^{-13}$
+\end{tabular}
+\end{center}
+
+and some of eigen-functions are in the next page.
+
+
+
+
+
+\end{document}
