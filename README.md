@@ -1,2 +1,2 @@
 # Physics
-This repository is where I am going to put my university projects on.
+In this repository, I am going to put my undergraduare projects on.
