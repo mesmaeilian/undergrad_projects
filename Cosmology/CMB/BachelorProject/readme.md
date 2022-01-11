@@ -1,1 +1,1 @@
-The Main Code is available at 'CoupledDiff.py'.
+'CoupledDiff.py' is the base code for calculations.
